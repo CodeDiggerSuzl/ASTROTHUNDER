@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	packing "go-gateway/basic-web/packaging"
+	"go-gateway/basic-web/packaging"
 	"net"
 )
 
@@ -13,5 +13,5 @@ func main() {
 		fmt.Printf("conn failed ,err: %v\n", err)
 		return
 	}
-	_ = packing.Encode(conn, "hello world 0!!!")
+	_ = packaging.Encode(conn, "hello world 0!!!")
 }
